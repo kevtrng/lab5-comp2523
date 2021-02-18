@@ -24,6 +24,4 @@ export class NumberGroup implements ISortable{
             return false; 
         }
     }
-
-
   }
