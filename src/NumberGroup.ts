@@ -10,17 +10,19 @@ export class NumberGroup implements ISortable{
     get length(): number {
         return this.data.length
     }
+
+    swap(leftPos: number, rightPos: number): void{
+        let left = this.data[leftPos];
+        this.data[leftPos] = this.data[rightPos];
+        this.data[rightPos] = left
+    }
+
     compare(leftPos: number, rightPos: number): boolean {
         if (this.data[leftPos] > this.data[rightPos]) {
             return true;
         } else {
             return false; 
         }
-    }
-    swap(leftPos: number, rightPos: number): void{
-        let left = this.data[leftPos];
-        this.data[leftPos] = this.data[rightPos];
-        this.data[rightPos] = left
     }
 
 

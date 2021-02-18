@@ -4,12 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "ts-node-dev src/index.ts",
+    "test": "ts-node-dev src/index.ts"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
     "expression": "^0.0.1"
+  },
+  "devDependencies": {
+    "ts-node-dev": "^1.1.1"
   }
 }
